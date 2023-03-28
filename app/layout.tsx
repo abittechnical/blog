@@ -22,7 +22,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => (
     )}
   >
     <body className="bg-neutral-1 dark:bg-neutralDark-1 relative antialiased">
-      <GridPattern />
+      {/*<GridPattern />*/}
       {children}
       <ColorModeToggle />
     </body>
