@@ -80,15 +80,15 @@ const LoremIpsum = ({}: LoremIpsumProps) => {
           </p>
           <pre>
             <code className="language-html">
-              &lt;article class="prose"&gt; &lt;h1&gt;Garlic bread with cheese:
-              What the science tells us&lt;/h1&gt; &lt;p&gt; For years parents
-              have espoused the health benefits of eating garlic bread with
-              cheese to their children, with the food earning such an iconic
-              status in our culture that kids will often dress up as warm,
-              cheesy loaf for Halloween. &lt;/p&gt; &lt;p&gt; But a recent study
-              shows that the celebrated appetizer may be linked to a series of
-              rabies cases springing up around the country. &lt;/p&gt; &lt;!--
-              ... --&gt; &lt;/article&gt;
+              &lt;article class=&quot;prose&quot;&gt; &lt;h1&gt;Garlic bread
+              with cheese: What the science tells us&lt;/h1&gt; &lt;p&gt; For
+              years parents have espoused the health benefits of eating garlic
+              bread with cheese to their children, with the food earning such an
+              iconic status in our culture that kids will often dress up as
+              warm, cheesy loaf for Halloween. &lt;/p&gt; &lt;p&gt; But a recent
+              study shows that the celebrated appetizer may be linked to a
+              series of rabies cases springing up around the country. &lt;/p&gt;
+              &lt;!-- ... --&gt; &lt;/article&gt;
             </code>
           </pre>
           <p>
@@ -263,8 +263,8 @@ const LoremIpsum = ({}: LoremIpsumProps) => {
               <strong>Nested lists are rarely a good idea.</strong>
               <ul>
                 <li>
-                  You might feel like you are being really "organized" or
-                  something but you are just creating a gross shape on the
+                  You might feel like you are being really &quot;organized&quot;
+                  or something but you are just creating a gross shape on the
                   screen that is hard to read.
                 </li>
                 <li>
@@ -383,7 +383,7 @@ const LoremIpsum = ({}: LoremIpsumProps) => {
             </thead>
             <tbody>
               <tr>
-                <td>Bret "The Hitman" Hart</td>
+                <td>Bret &quot;The Hitman&quot; Hart</td>
                 <td>Calgary, AB</td>
                 <td>Sharpshooter</td>
               </tr>
@@ -420,8 +420,8 @@ const LoremIpsum = ({}: LoremIpsumProps) => {
           <p>
             Even though it&apos;s probably a bad idea, and historically
             I&apos;ve had a hard time making it look good. This{" "}
-            <em>"wrap the code blocks in backticks"</em> trick works pretty well
-            though really.
+            <em>&quot;wrap the code blocks in backticks&quot;</em> trick works
+            pretty well though really.
           </p>
           <p>
             Another thing I&apos;ve done in the past is put a <code>code</code>{" "}
@@ -444,30 +444,31 @@ const LoremIpsum = ({}: LoremIpsumProps) => {
             <code>h5</code> or <code>h6</code>.
           </p>
           <p>
-            We don't style them at all out of the box because <code>h4</code>{" "}
-            elements are already so small that they are the same size as the
-            body copy. What are we supposed to do with an <code>h5</code>, make
-            it <em>smaller</em> than the body copy? No thanks.
+            We don&apos;t style them at all out of the box because{" "}
+            <code>h4</code> elements are already so small that they are the same
+            size as the body copy. What are we supposed to do with an{" "}
+            <code>h5</code>, make it <em>smaller</em> than the body copy? No
+            thanks.
           </p>
           <h3>We still need to think about stacked headings though.</h3>
           <h4>
-            Let's make sure we don't screw that up with <code>h4</code>{" "}
-            elements, either.
+            Let&apos;s make sure we don&apos;t screw that up with{" "}
+            <code>h4</code> elements, either.
           </h4>
           <p>
             Phew, with any luck we have styled the headings above this text and
             they look pretty good.
           </p>
           <p>
-            Let's add a closing paragraph here so things end with a decently
-            sized block of text. I can't explain why I want things to end that
-            way but I have to assume it's because I think things will look weird
-            or unbalanced if there is a heading too close to the end of the
-            document.
+            Let&apos;s add a closing paragraph here so things end with a
+            decently sized block of text. I can&apos;t explain why I want things
+            to end that way but I have to assume it&apos;s because I think
+            things will look weird or unbalanced if there is a heading too close
+            to the end of the document.
           </p>
           <p>
-            What I've written here is probably long enough, but adding this
-            final sentence can't hurt.
+            What I&apos;ve written here is probably long enough, but adding this
+            final sentence can&apos;t hurt.
           </p>
         </div>
       </div>
