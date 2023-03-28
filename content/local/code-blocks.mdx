@@ -1,0 +1,35 @@
+---
+title: Rewriting the cosmOS kernel in Rust
+date: 2023-03-23
+version: "1.0.2"
+---
+
+Logspot also supports code syntax highlighting as well
+
+![codeblocks](/static/codeblocks.png)
+
+```javascript server.js
+// Javascript
+const url = "https://jsonplaceholder.typicode.com/posts/";
+async function fetchPosts() {
+  const response = await fetch(url);
+  console.log(response);
+}
+```
+
+Currently this is only supported for the following languages, to keep the bundle small for this demo.
+
+- JavaScript
+- CSS
+- HTML
+- Markdown
+- TypeScript
+- Vue
+- Python
+- Ruby
+
+You can always add your own languages to the `highlight` array in the `nuxt.config.js` file.
+
+Support for inline code blocks is also available example `const name = "John Doe"`{lang="js"}
+
+Shiki also supports different themes for codeblocks, you can learn mode about them [here](https://content.nuxtjs.org/api/configuration/#highlight)
