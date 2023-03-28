@@ -23,7 +23,7 @@ const PostCard = ({ date, version, title, code, slug }: PostCardProps) => {
       </h2>
       <div className="relative pt-2 pl-7 pb-16 md:w-3/4 md:pt-0 md:pl-12">
         {/*Feed Border */}
-        <div className="bg-neutral-6 dark:bg-neutralDark-6 absolute -bottom-2 left-0 -top-3 w-px md:top-2.5" />
+        <div className="bg-neutral-7 dark:bg-neutralDark-7 absolute -bottom-2 left-0 -top-3 w-px md:top-2.5" />
         {/*Feed Dot */}
         <div
           className="border-neutral-6 bg-neutral-1 dark:bg-neutralDark-1 dark:border-neutralDark-6 absolute

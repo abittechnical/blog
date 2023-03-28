@@ -1,6 +1,6 @@
 export type GridPatternProps = {}
 
-const GridPattern = ({}: GridPatternProps) => {
+const GridPatternReference = ({}: GridPatternProps) => {
   return (
     <>
       <svg
@@ -30,4 +30,4 @@ const GridPattern = ({}: GridPatternProps) => {
   )
 }
 
-export default GridPattern
+export default GridPatternReference
