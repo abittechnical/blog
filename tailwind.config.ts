@@ -1,15 +1,17 @@
 import type { Config } from 'tailwindcss';
 import typographyPlugin from '@tailwindcss/typography';
+import typography from './typography';
 
 export default {
   content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
   theme: {
-    borderRadius: {
-      DEFAULT: 'var(--whys-radius-5)',
-      sm: 'var(--whys-radius-3)',
-      lg: 'var(--whys-radius-6)',
-      full: '9999px',
-    },
+    // borderRadius: {
+    //   DEFAULT: 'var(--whys-radius-5)',
+    //   sm: 'var(--whys-radius-3)',
+    //   lg: 'var(--whys-radius-6)',
+    //   full: '9999px',
+    // },
+    typography,
     extend: {
       colors: {},
       backgroundColor: {
