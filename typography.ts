@@ -1,4 +1,4 @@
-import { type PluginUtils } from 'tailwindcss/types/config'
+import { type PluginUtils } from 'tailwindcss/types/config';
 
 export default function typographyStyles({ theme }: PluginUtils) {
   return {
@@ -28,22 +28,22 @@ export default function typographyStyles({ theme }: PluginUtils) {
     DEFAULT: {
       css: {
         '--tw-prose-body': theme('colors.zinc.600'),
-        '--tw-prose-headings': theme('colors.zinc.900'),
+        '--tw-prose-headings': theme('textColor.primary'),
         '--tw-prose-links': theme('colors.teal.500'),
         '--tw-prose-links-hover': theme('colors.teal.600'),
         '--tw-prose-underline': theme('colors.teal.500 / 0.2'),
         '--tw-prose-underline-hover': theme('colors.teal.500'),
-        '--tw-prose-bold': theme('colors.zinc.900'),
-        '--tw-prose-counters': theme('colors.zinc.900'),
-        '--tw-prose-bullets': theme('colors.zinc.900'),
+        '--tw-prose-bold': theme('textColor.primary'),
+        '--tw-prose-counters': theme('textColor.primary'),
+        '--tw-prose-bullets': theme('textColor.primary'),
         '--tw-prose-hr': theme('colors.zinc.100'),
         '--tw-prose-quote-borders': theme('colors.zinc.200'),
         '--tw-prose-captions': theme('colors.zinc.400'),
         '--tw-prose-code': theme('colors.zinc.700'),
         '--tw-prose-code-bg': theme('colors.zinc.300 / 0.2'),
         '--tw-prose-pre-code': theme('colors.zinc.100'),
-        '--tw-prose-pre-bg': theme('colors.zinc.900'),
-        '--tw-prose-pre-border': 'transparent',
+        '--tw-prose-pre-bg': theme('colors.background.1'),
+        '--tw-prose-pre-border': theme('borderColor.DEFAULT'),
         '--tw-prose-th-borders': theme('colors.zinc.200'),
         '--tw-prose-td-borders': theme('colors.zinc.100'),
 
@@ -279,5 +279,5 @@ export default function typographyStyles({ theme }: PluginUtils) {
         },
       },
     },
-  }
+  };
 }
