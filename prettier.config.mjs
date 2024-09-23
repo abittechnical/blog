@@ -1,7 +1,7 @@
 /** @type {import("prettier").Config} */
 
 export default {
-  semi: true,
+  semi: false,
   singleQuote: true,
   trailingComma: 'all',
   arrowParens: 'avoid',
@@ -11,8 +11,7 @@ export default {
       files: ['*.mdx', '*.md'],
       options: {
         printWidth: 42,
-        semi: false,
       },
     },
   ],
-};
+}
