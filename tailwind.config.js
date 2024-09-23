@@ -2,6 +2,12 @@
 module.exports = {
   content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
   theme: {
+    borderRadius: {
+      DEFAULT: 'var(--whys-radius-5)',
+      sm: 'var(--whys-radius-3)',
+      lg: 'var(--whys-radius-6)',
+      full: '9999px',
+    },
     extend: {
       colors: {},
       backgroundColor: {

@@ -1,0 +1,10 @@
+:root {
+  --whys-scaling: 1;
+  --whys-radius-factor: 1.5;
+  --whys-radius-1: calc(3px * var(--whys-scaling) * var(--whys-radius-factor));
+  --whys-radius-2: calc(4px * var(--whys-scaling) * var(--whys-radius-factor));
+  --whys-radius-3: calc(6px * var(--whys-scaling) * var(--whys-radius-factor));
+  --whys-radius-4: calc(8px * var(--whys-scaling) * var(--whys-radius-factor));
+  --whys-radius-5: calc(12px * var(--whys-scaling) * var(--whys-radius-factor));
+  --whys-radius-6: calc(16px * var(--whys-scaling) * var(--whys-radius-factor));
+}

@@ -1,4 +1,5 @@
 @import 'tokens/colors.css';
+@import 'tokens/radius.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -64,11 +65,11 @@ html {
 }
 
 .prose pre {
-  @apply bg-1 dark:bg-1 rounded-2xl overflow-x-auto border py-3 px-5 text-sm hover:bg-gray-hover hover:border-hover;
+  @apply bg-1 dark:bg-1 rounded overflow-x-auto border py-3 px-5 text-sm hover:bg-gray-hover hover:border-hover;
 }
 
 .prose code {
-  @apply px-1 py-0.5 rounded-lg;
+  @apply px-1 py-0.5 rounded-sm;
 }
 
 .prose pre code {
