@@ -1,5 +1,7 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss';
+import typographyPlugin from '@tailwindcss/typography';
+
+export default {
   content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
   theme: {
     borderRadius: {
@@ -39,5 +41,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
-};
+  plugins: [typographyPlugin],
+} satisfies Config;

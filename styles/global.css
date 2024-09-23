@@ -37,109 +37,109 @@ html {
   min-width: 360px;
 }
 
-.prose .anchor {
-  @apply absolute invisible no-underline;
+/*.prose .anchor {*/
+/*  @apply absolute invisible no-underline;*/
 
-  margin-left: -1em;
-  padding-right: 0.5em;
-  width: 80%;
-  max-width: 700px;
-  cursor: pointer;
-}
+/*  margin-left: -1em;*/
+/*  padding-right: 0.5em;*/
+/*  width: 80%;*/
+/*  max-width: 700px;*/
+/*  cursor: pointer;*/
+/*}*/
 
-.anchor:hover {
-  @apply visible;
-}
+/*.anchor:hover {*/
+/*  @apply visible;*/
+/*}*/
 
-.prose a {
-  @apply underline transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];
-}
+/*.prose a {*/
+/*  @apply underline transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];*/
+/*}*/
 
-.prose .anchor:after {
-  @apply text-neutral-300 dark:text-neutral-700;
-  content: '#';
-}
+/*.prose .anchor:after {*/
+/*  @apply text-neutral-300 dark:text-neutral-700;*/
+/*  content: '#';*/
+/*}*/
 
-.prose *:hover > .anchor {
-  @apply visible;
-}
+/*.prose *:hover > .anchor {*/
+/*  @apply visible;*/
+/*}*/
 
-.prose pre {
-  @apply bg-1 dark:bg-1 rounded overflow-x-auto border py-3 px-5 text-sm hover:bg-gray-hover hover:border-hover;
-}
+/*.prose pre {*/
+/*  @apply bg-1 dark:bg-1 rounded overflow-x-auto border py-3 px-5 text-sm hover:bg-gray-hover hover:border-hover;*/
+/*}*/
 
-.prose code {
-  @apply px-1 py-0.5 rounded-sm;
-}
+/*.prose code {*/
+/*  @apply px-1 py-0.5 rounded-sm;*/
+/*}*/
 
-.prose pre code {
-  @apply p-0;
-  border: initial;
-  line-height: 1.5;
-}
+/*.prose pre code {*/
+/*  @apply p-0;*/
+/*  border: initial;*/
+/*  line-height: 1.5;*/
+/*}*/
 
-.prose code span {
-  @apply font-medium;
-}
+/*.prose code span {*/
+/*  @apply font-medium;*/
+/*}*/
 
-.prose img {
-  /* Don't apply styles to next/image */
-  @apply m-0;
-}
+/*.prose img {*/
+/*  !* Don't apply styles to next/image *!*/
+/*  @apply m-0;*/
+/*}*/
 
-.prose p {
-  @apply my-4 text-secondary;
-}
-.prose {
-  h1,
-  h2,
-  h3,
-  h4 {
-    @apply text-primary;
-  }
-}
-.prose h1 {
-  @apply text-4xl font-medium tracking-tight mt-6 mb-2;
-}
+/*.prose p {*/
+/*  @apply my-4 text-secondary;*/
+/*}*/
+/*.prose {*/
+/*  h1,*/
+/*  h2,*/
+/*  h3,*/
+/*  h4 {*/
+/*    @apply text-primary;*/
+/*  }*/
+/*}*/
+/*.prose h1 {*/
+/*  @apply text-4xl font-medium tracking-tight mt-6 mb-2;*/
+/*}*/
 
-.prose h2 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
-}
+/*.prose h2 {*/
+/*  @apply text-xl font-medium tracking-tight mt-6 mb-2;*/
+/*}*/
 
-.prose h3 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
-}
+/*.prose h3 {*/
+/*  @apply text-xl font-medium tracking-tight mt-6 mb-2;*/
+/*}*/
 
-.prose h4 {
-  @apply text-lg font-medium tracking-tight mt-6 mb-2;
-}
+/*.prose h4 {*/
+/*  @apply text-lg font-medium tracking-tight mt-6 mb-2;*/
+/*}*/
 
-.prose strong {
-  @apply font-medium;
-}
+/*.prose strong {*/
+/*  @apply font-medium;*/
+/*}*/
 
-.prose ul {
-  @apply list-disc pl-6;
-}
+/*.prose ul {*/
+/*  @apply list-disc pl-6;*/
+/*}*/
 
-.prose ol {
-  @apply list-decimal pl-6;
-}
+/*.prose ol {*/
+/*  @apply list-decimal pl-6;*/
+/*}*/
 
-.prose > :first-child {
-  /* Override removing top margin, causing layout shift */
-  margin-top: 1.25em !important;
-  margin-bottom: 1.25em !important;
-}
+/*.prose > :first-child {*/
+/*  !* Override removing top margin, causing layout shift *!*/
+/*  margin-top: 1.25em !important;*/
+/*  margin-bottom: 1.25em !important;*/
+/*}*/
 
-pre::-webkit-scrollbar {
-  display: none;
-}
+/*pre::-webkit-scrollbar {*/
+/*  display: none;*/
+/*}*/
 
-pre {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
+/*pre {*/
+/*  -ms-overflow-style: none; !* IE and Edge *!*/
+/*  scrollbar-width: none; !* Firefox *!*/
+/*}*/
 
 /* Remove Safari input shadow on mobile */
 input[type='text'],
