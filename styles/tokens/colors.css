@@ -1,52 +1,121 @@
+@import '@radix-ui/colors/sand.css';
+@import '@radix-ui/colors/sand-alpha.css';
+@import '@radix-ui/colors/sand-dark.css';
+@import '@radix-ui/colors/sand-dark-alpha.css';
+@import '@radix-ui/colors/lime.css';
+@import '@radix-ui/colors/lime-alpha.css';
+@import '@radix-ui/colors/lime-dark.css';
+@import '@radix-ui/colors/lime-dark-alpha.css';
+@import '@radix-ui/colors/white-alpha.css';
+@import '@radix-ui/colors/black-alpha.css';
+
 :root,
 .light,
 .light-theme {
-  --whys-background-100: #fff;
-  --whys-background-200: #fafafa;
-  --whys-gray-100: #f2f2f2;
-  --whys-gray-200: #ebebeb;
-  --whys-gray-300: #e6e6e6;
-  --whys-gray-400: #ebebeb;
-  --whys-gray-500: #c9c9c9;
-  --whys-gray-600: #a8a8a8;
-  --whys-gray-700: #8f8f8f;
-  --whys-gray-800: #7d7d7d;
-  --whys-gray-900: #666;
-  --whys-gray-1000: #171717;
+  --ds-gray-1: var(--sand-1);
+  --ds-gray-2: var(--sand-2);
+  --ds-gray-3: var(--sand-3);
+  --ds-gray-4: var(--sand-4);
+  --ds-gray-5: var(--sand-5);
+  --ds-gray-6: var(--sand-6);
+  --ds-gray-7: var(--sand-7);
+  --ds-gray-8: var(--sand-8);
+  --ds-gray-9: var(--sand-9);
+  --ds-gray-10: var(--sand-10);
+  --ds-gray-11: var(--sand-11);
+  --ds-gray-12: var(--sand-12);
+  --ds-gray-a1: var(--sand-a1);
+  --ds-gray-a2: var(--sand-a2);
+  --ds-gray-a3: var(--sand-a3);
+  --ds-gray-a4: var(--sand-a4);
+  --ds-gray-a5: var(--sand-a5);
+  --ds-gray-a6: var(--sand-a6);
+  --ds-gray-a7: var(--sand-a7);
+  --ds-gray-a8: var(--sand-a8);
+  --ds-gray-a9: var(--sand-a9);
+  --ds-gray-a10: var(--sand-a10);
+  --ds-gray-a11: var(--sand-a11);
+  --ds-gray-a12: var(--sand-a12);
 
-  /*****************************/
-  /****** SEMANTIC TOKENS ******/
-  /******************************/
-  --whys-background-default: var(--whys-background-100);
-  --whys-background-secondary: var(--whys-background-200);
-  /* Component Soft Background  */
-  --whys-surface-soft-gray-default: var(--whys-gray-100);
-  --whys-surface-soft-gray-hover: var(--whys-gray-200);
-  --whys-surface-soft-gray-active: var(--whys-gray-300);
-  /* Component Borders  */
-  --whys-border-gray-default: var(--whys-gray-400);
-  --whys-border-gray-hover: var(--whys-gray-500);
-  --whys-border-gray-active: var(--whys-gray-600);
-  /* Component Solid Background  */
-  --whys-surface-solid-gray-default: var(--whys-gray-700);
-  --whys-surface-solid-gray-hover: var(--whys-gray-800);
-  /* Component text & icons  */
-  --whys-text-secondary-gray: var(--whys-gray-900);
-  --whys-text-primary-gray: var(--whys-gray-1000);
+  --ds-accent-1: var(--lime-1);
+  --ds-accent-2: var(--lime-2);
+  --ds-accent-3: var(--lime-3);
+  --ds-accent-4: var(--lime-4);
+  --ds-accent-5: var(--lime-5);
+  --ds-accent-6: var(--lime-6);
+  --ds-accent-7: var(--lime-7);
+  --ds-accent-8: var(--lime-8);
+  --ds-accent-9: var(--lime-9);
+  --ds-accent-10: var(--lime-10);
+  --ds-accent-11: var(--lime-11);
+  --ds-accent-12: var(--lime-12);
+  --ds-accent-a1: var(--lime-a1);
+  --ds-accent-a2: var(--lime-a2);
+  --ds-accent-a3: var(--lime-a3);
+  --ds-accent-a4: var(--lime-a4);
+  --ds-accent-a5: var(--lime-a5);
+  --ds-accent-a6: var(--lime-a6);
+  --ds-accent-a7: var(--lime-a7);
+  --ds-accent-a8: var(--lime-a8);
+  --ds-accent-a9: var(--lime-a9);
+  --ds-accent-a10: var(--lime-a10);
+  --ds-accent-a11: var(--lime-a11);
+  --ds-accent-a12: var(--lime-a12);
+}
+
+:root,
+.light,
+.light-theme {
+  --ds-panel: white;
+  --ds-panel-contrast: var(--black-a9);
+  --ds-shadow: var(--ds-gray-a3);
+  --ds-overlay: var(--black-a8);
+
+  --ds-gray-base: var(--ds-gray-1);
+  --ds-gray-bg-subtle: var(--ds-gray-2);
+  --ds-gray-bg: var(--ds-gray-3);
+  --ds-gray-bg-hover: var(--ds-gray-4);
+  --ds-gray-bg-active: var(--ds-gray-5);
+  --ds-gray-line: var(--ds-gray-6);
+  --ds-gray-border: var(--ds-gray-7);
+  --ds-gray-border-hover: var(--ds-gray-8);
+  --ds-gray-solid: var(--ds-gray-9);
+  --gray-placeholder-text: var(--gray-9);
+  --ds-gray-solid-hover: var(--ds-gray-10);
+  --ds-gray-text: var(--ds-gray-11);
+  --ds-gray-text-contrast: var(--ds-gray-12);
+
+  --ds-accent-base: var(--ds-accent-1);
+  --ds-accent-bg-subtle: var(--ds-accent-2);
+  --ds-accent-bg: var(--ds-accent-3);
+  --ds-accent-bg-hover: var(--ds-accent-4);
+  --ds-accent-bg-active: var(--ds-accent-5);
+  --ds-accent-line: var(--ds-accent-6);
+  --ds-accent-border: var(--ds-accent-7);
+  --ds-accent-border-hover: var(--ds-accent-8);
+  --ds-accent-solid: var(--ds-accent-9);
+  --ds-accent-solid-hover: var(--ds-accent-10);
+  --ds-accent-text: var(--ds-accent-11);
+  --ds-accent-text-contrast: var(--ds-accent-12);
+
+  --ds-success-base: var(--green-1);
+  --ds-success-bg-subtle: var(--green-2);
+  /* repeat for all steps */
+
+  --ds-warning-base: var(--yellow-1);
+  --ds-warning-bg-subtle: var(--yellow-2);
+  /* repeat for all steps */
+
+  --ds-danger-base: var(--red-1);
+  --ds-danger-bg-subtle: var(--red-2);
+  /* repeat for all steps */
 }
 
 .dark,
 .dark-theme {
-  --whys-background-100: #0a0a0a;
-  --whys-background-200: #000;
-  --whys-gray-100: #1a1a1a;
-  --whys-gray-200: #1f1f1f;
-  --whys-gray-300: #292929;
-  --whys-gray-400: #2e2e2e;
-  --whys-gray-500: #454545;
-  --whys-gray-600: #878787;
-  --whys-gray-700: #8f8f8f;
-  --whys-gray-800: #7d7d7d;
-  --whys-gray-900: #a1a1a1;
-  --whys-gray-1000: #ededed;
+  /* Remap your colors for dark mode */
+  --ds-panel: var(--ds-gray-2);
+  --ds-panel-contrast: var(--white-a9);
+  --ds-shadow: black;
+  --ds-overlay: var(--black-a11);
 }
