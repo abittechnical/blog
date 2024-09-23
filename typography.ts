@@ -27,7 +27,7 @@ export default function typographyStyles({ theme }: PluginUtils) {
     },
     DEFAULT: {
       css: {
-        '--tw-prose-body': theme('colors.zinc.600'),
+        '--tw-prose-body': theme('textColor.secondary'),
         '--tw-prose-headings': theme('textColor.primary'),
         '--tw-prose-links': theme('colors.teal.500'),
         '--tw-prose-links-hover': theme('colors.teal.600'),
