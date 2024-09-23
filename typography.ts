@@ -27,23 +27,23 @@ export default function typographyStyles({ theme }: PluginUtils) {
     },
     DEFAULT: {
       css: {
-        '--tw-prose-body': theme('textColor.secondary'),
-        '--tw-prose-headings': theme('textColor.primary'),
-        '--tw-prose-links': theme('colors.teal.500'),
-        '--tw-prose-links-hover': theme('colors.teal.600'),
-        '--tw-prose-underline': theme('colors.teal.500 / 0.2'),
-        '--tw-prose-underline-hover': theme('colors.teal.500'),
-        '--tw-prose-bold': theme('textColor.primary'),
-        '--tw-prose-counters': theme('textColor.primary'),
-        '--tw-prose-bullets': theme('textColor.primary'),
-        '--tw-prose-hr': theme('colors.gray.2'),
+        '--tw-prose-body': theme('textColor.base'),
+        '--tw-prose-headings': theme('textColor.contrast'),
+        '--tw-prose-links': theme('textColor.accent.DEFAULT'),
+        '--tw-prose-links-hover': theme('colors.accent.10'),
+        '--tw-prose-underline': theme('borderColor.accent.line'),
+        '--tw-prose-underline-hover': theme('colors.accent.9'),
+        '--tw-prose-bold': theme('textColor.contrast'),
+        '--tw-prose-counters': theme('textColor.contrast'),
+        '--tw-prose-bullets': theme('textColor.contrast'),
+        '--tw-prose-hr': theme('borderColor.line'),
         '--tw-prose-quote-borders': theme('colors.zinc.200'),
         '--tw-prose-captions': theme('colors.zinc.400'),
         '--tw-prose-code': theme('colors.zinc.700'),
-        '--tw-prose-code-bg': theme('colors.zinc.300 / 0.2'),
+        '--tw-prose-code-bg': theme('backgroundColor.active'),
         '--tw-prose-pre-code': theme('colors.zinc.100'),
-        '--tw-prose-pre-bg': theme('colors.background.1'),
-        '--tw-prose-pre-border': theme('borderColor.DEFAULT'),
+        '--tw-prose-pre-bg': theme('colors.panel'),
+        '--tw-prose-pre-border': theme('borderColor.line'),
         '--tw-prose-th-borders': theme('colors.zinc.200'),
         '--tw-prose-td-borders': theme('colors.zinc.100'),
 
@@ -102,7 +102,7 @@ export default function typographyStyles({ theme }: PluginUtils) {
 
         // Images
         img: {
-          borderRadius: theme('borderRadius.3xl'),
+          borderRadius: theme('borderRadius.2xl'),
         },
 
         // Inline elements
@@ -129,7 +129,7 @@ export default function typographyStyles({ theme }: PluginUtils) {
           fontSize: theme('fontSize.sm')[0],
           fontWeight: theme('fontWeight.semibold'),
           backgroundColor: 'var(--tw-prose-code-bg)',
-          borderRadius: theme('borderRadius.lg'),
+          borderRadius: theme('borderRadius.md'),
           paddingLeft: theme('spacing.1'),
           paddingRight: theme('spacing.1'),
         },
@@ -199,7 +199,7 @@ export default function typographyStyles({ theme }: PluginUtils) {
           fontSize: theme('fontSize.sm')[0],
           fontWeight: theme('fontWeight.medium'),
           backgroundColor: 'var(--tw-prose-pre-bg)',
-          borderRadius: theme('borderRadius.3xl'),
+          borderRadius: theme('borderRadius.2xl'),
           padding: theme('spacing.8'),
           overflowX: 'auto',
           border: '1px solid',

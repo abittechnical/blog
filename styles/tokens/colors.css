@@ -1,7 +1,7 @@
-@import '@radix-ui/colors/sand.css';
-@import '@radix-ui/colors/sand-alpha.css';
-@import '@radix-ui/colors/sand-dark.css';
-@import '@radix-ui/colors/sand-dark-alpha.css';
+@import '@radix-ui/colors/sage.css';
+@import '@radix-ui/colors/sage-alpha.css';
+@import '@radix-ui/colors/sage-dark.css';
+@import '@radix-ui/colors/sage-dark-alpha.css';
 @import '@radix-ui/colors/lime.css';
 @import '@radix-ui/colors/lime-alpha.css';
 @import '@radix-ui/colors/lime-dark.css';
@@ -12,30 +12,30 @@
 :root,
 .light,
 .light-theme {
-  --ds-gray-1: var(--sand-1);
-  --ds-gray-2: var(--sand-2);
-  --ds-gray-3: var(--sand-3);
-  --ds-gray-4: var(--sand-4);
-  --ds-gray-5: var(--sand-5);
-  --ds-gray-6: var(--sand-6);
-  --ds-gray-7: var(--sand-7);
-  --ds-gray-8: var(--sand-8);
-  --ds-gray-9: var(--sand-9);
-  --ds-gray-10: var(--sand-10);
-  --ds-gray-11: var(--sand-11);
-  --ds-gray-12: var(--sand-12);
-  --ds-gray-a1: var(--sand-a1);
-  --ds-gray-a2: var(--sand-a2);
-  --ds-gray-a3: var(--sand-a3);
-  --ds-gray-a4: var(--sand-a4);
-  --ds-gray-a5: var(--sand-a5);
-  --ds-gray-a6: var(--sand-a6);
-  --ds-gray-a7: var(--sand-a7);
-  --ds-gray-a8: var(--sand-a8);
-  --ds-gray-a9: var(--sand-a9);
-  --ds-gray-a10: var(--sand-a10);
-  --ds-gray-a11: var(--sand-a11);
-  --ds-gray-a12: var(--sand-a12);
+  --ds-gray-1: var(--sage-1);
+  --ds-gray-2: var(--sage-2);
+  --ds-gray-3: var(--sage-3);
+  --ds-gray-4: var(--sage-4);
+  --ds-gray-5: var(--sage-5);
+  --ds-gray-6: var(--sage-6);
+  --ds-gray-7: var(--sage-7);
+  --ds-gray-8: var(--sage-8);
+  --ds-gray-9: var(--sage-9);
+  --ds-gray-10: var(--sage-10);
+  --ds-gray-11: var(--sage-11);
+  --ds-gray-12: var(--sage-12);
+  --ds-gray-a1: var(--sage-a1);
+  --ds-gray-a2: var(--sage-a2);
+  --ds-gray-a3: var(--sage-a3);
+  --ds-gray-a4: var(--sage-a4);
+  --ds-gray-a5: var(--sage-a5);
+  --ds-gray-a6: var(--sage-a6);
+  --ds-gray-a7: var(--sage-a7);
+  --ds-gray-a8: var(--sage-a8);
+  --ds-gray-a9: var(--sage-a9);
+  --ds-gray-a10: var(--sage-a10);
+  --ds-gray-a11: var(--sage-a11);
+  --ds-gray-a12: var(--sage-a12);
 
   --ds-accent-1: var(--lime-1);
   --ds-accent-2: var(--lime-2);

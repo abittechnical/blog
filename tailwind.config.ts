@@ -99,10 +99,19 @@ export default {
         DEFAULT: 'var(--ds-gray-border)',
         line: 'var(--ds-gray-line)',
         hover: 'var(--ds-gray-border-hover)',
+        accent: {
+          DEFAULT: 'var(--ds-accent-border)',
+          line: 'var(--ds-accent-line)',
+          hover: 'var(--ds-accent-border-hover)',
+        },
       },
       textColor: {
         base: 'var(--ds-gray-text)',
         contrast: 'var(--ds-gray-text-contrast)',
+        accent: {
+          DEFAULT: 'var(--ds-accent-text)',
+          contrast: 'var(--ds-accent-text-contrast)',
+        },
       },
     },
   },
