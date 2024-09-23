@@ -1,0 +1,52 @@
+:root,
+.light,
+.light-theme {
+  --whys-background-100: #fff;
+  --whys-background-200: #fafafa;
+  --whys-gray-100: #f2f2f2;
+  --whys-gray-200: #ebebeb;
+  --whys-gray-300: #e6e6e6;
+  --whys-gray-400: #ebebeb;
+  --whys-gray-500: #c9c9c9;
+  --whys-gray-600: #a8a8a8;
+  --whys-gray-700: #8f8f8f;
+  --whys-gray-800: #7d7d7d;
+  --whys-gray-900: #666;
+  --whys-gray-1000: #171717;
+
+  /*****************************/
+  /****** SEMANTIC TOKENS ******/
+  /******************************/
+  --whys-background-default: var(--whys-background-100);
+  --whys-background-secondary: var(--whys-background-200);
+  /* Component Soft Background  */
+  --whys-surface-soft-gray-default: var(--whys-gray-100);
+  --whys-surface-soft-gray-hover: var(--whys-gray-200);
+  --whys-surface-soft-gray-active: var(--whys-gray-300);
+  /* Component Borders  */
+  --whys-border-gray-default: var(--whys-gray-400);
+  --whys-border-gray-hover: var(--whys-gray-500);
+  --whys-border-gray-active: var(--whys-gray-600);
+  /* Component Solid Background  */
+  --whys-surface-solid-gray-default: var(--whys-gray-700);
+  --whys-surface-solid-gray-hover: var(--whys-gray-800);
+  /* Component text & icons  */
+  --whys-text-secondary-gray: var(--whys-gray-900);
+  --whys-text-primary-gray: var(--whys-gray-1000);
+}
+
+.dark,
+.dark-theme {
+  --whys-background-100: #0a0a0a;
+  --whys-background-200: #000;
+  --whys-gray-100: #1a1a1a;
+  --whys-gray-200: #1f1f1f;
+  --whys-gray-300: #292929;
+  --whys-gray-400: #2e2e2e;
+  --whys-gray-500: #454545;
+  --whys-gray-600: #878787;
+  --whys-gray-700: #8f8f8f;
+  --whys-gray-800: #7d7d7d;
+  --whys-gray-900: #a1a1a1;
+  --whys-gray-1000: #ededed;
+}
