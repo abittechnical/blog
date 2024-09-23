@@ -1,6 +1,6 @@
-import type { Config } from 'tailwindcss'
-import typographyPlugin from '@tailwindcss/typography'
-import typography from './typography'
+import type { Config } from 'tailwindcss';
+import typographyPlugin from '@tailwindcss/typography';
+import typography from './typography';
 
 export default {
   content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
@@ -13,7 +13,20 @@ export default {
     // },
     typography,
     extend: {
-      colors: {},
+      colors: {
+        gray: {
+          1: 'var(--whys-gray-100)',
+          2: 'var(--whys-gray-200)',
+          3: 'var(--whys-gray-300)',
+          4: 'var(--whys-gray-400)',
+          5: 'var(--whys-gray-500)',
+          6: 'var(--whys-gray-600)',
+          7: 'var(--whys-gray-700)',
+          8: 'var(--whys-gray-800)',
+          9: 'var(--whys-gray-900)',
+          10: 'var(--whys-gray-1000)',
+        },
+      },
       backgroundColor: {
         1: 'var(--whys-background-default)',
         2: 'var(--whys-background-secondary)',
@@ -44,4 +57,4 @@ export default {
     },
   },
   plugins: [typographyPlugin],
-} satisfies Config
+} satisfies Config;

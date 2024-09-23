@@ -36,7 +36,7 @@ export default function typographyStyles({ theme }: PluginUtils) {
         '--tw-prose-bold': theme('textColor.primary'),
         '--tw-prose-counters': theme('textColor.primary'),
         '--tw-prose-bullets': theme('textColor.primary'),
-        '--tw-prose-hr': theme('colors.zinc.100'),
+        '--tw-prose-hr': theme('colors.gray.2'),
         '--tw-prose-quote-borders': theme('colors.zinc.200'),
         '--tw-prose-captions': theme('colors.zinc.400'),
         '--tw-prose-code': theme('colors.zinc.700'),
