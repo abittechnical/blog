@@ -1,5 +1,5 @@
 import { baseUrl } from 'app/sitemap'
-import { getBlogPosts } from 'app/blog/utils'
+import { getBlogPosts } from '@/lib/utils'
 
 export async function GET() {
   let allBlogs = await getBlogPosts()
@@ -12,15 +12,13 @@ export async function GET() {
       return 1
     })
     .map(
-      (post) =>
+      post =>
         `<item>
           <title>${post.metadata.title}</title>
           <link>${baseUrl}/blog/${post.slug}</link>
           <description>${post.metadata.summary || ''}</description>
-          <pubDate>${new Date(
-            post.metadata.publishedAt
-          ).toUTCString()}</pubDate>
-        </item>`
+          <pubDate>${new Date(post.metadata.publishedAt).toUTCString()}</pubDate>
+        </item>`,
     )
     .join('\n')
 

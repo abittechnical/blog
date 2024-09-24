@@ -5,6 +5,7 @@
     "build": "next build",
     "start": "next start",
     "prepare": "husky",
+    "format": "prettier --write .",
     "test": "echo \"[WARNING] No test defined\" && exit 0"
   },
   "dependencies": {
@@ -14,6 +15,7 @@
     "@types/react-dom": "18.2.19",
     "@vercel/analytics": "^1.1.3",
     "@vercel/speed-insights": "^1.0.9",
+    "cva": "1.0.0-beta.1",
     "geist": "1.2.2",
     "next": "canary",
     "next-mdx-remote": "^4.4.1",
@@ -21,6 +23,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sugar-high": "^0.6.0",
+    "tailwind-merge": "^2.5.2",
     "tailwindcss": "4.0.0-alpha.13",
     "typescript": "5.3.3"
   },
@@ -28,6 +31,7 @@
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
     "husky": "^9.1.6",
-    "prettier": "^3.3.3"
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6"
   }
 }

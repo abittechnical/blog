@@ -1,18 +1,17 @@
 /** @type {import("prettier").Config} */
 
 export default {
-  semi: true,
+  semi: false,
   singleQuote: true,
   trailingComma: 'all',
   arrowParens: 'avoid',
-  plugins: [],
+  plugins: ['prettier-plugin-tailwindcss'],
   overrides: [
     {
       files: ['*.mdx', '*.md'],
       options: {
         printWidth: 42,
-        semi: false,
       },
     },
   ],
-};
+}
