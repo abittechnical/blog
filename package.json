@@ -9,6 +9,7 @@
     "test": "echo \"[WARNING] No test defined\" && exit 0"
   },
   "dependencies": {
+    "@heroicons/react": "^2.1.5",
     "@tailwindcss/postcss": "4.0.0-alpha.13",
     "@types/node": "20.11.17",
     "@types/react": "18.2.55",

@@ -8,6 +8,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from '@/components/footer'
 import { baseUrl } from './sitemap'
 import { cx } from '@/lib/cva'
+import { SiteHeader } from '@/components/site-header'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -39,8 +40,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={cx(GeistSans.variable, GeistMono.variable)}>
-      <body className="min-h-screen bg-white font-sans antialiased">
+    <html lang="en" className={cx(GeistSans.variable, GeistMono.variable)} suppressHydrationWarning>
+      <body className="min-h-screen bg-white antialiased">
         {children}
         <Analytics />
         <SpeedInsights />
