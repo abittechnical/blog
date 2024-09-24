@@ -1,8 +1,83 @@
+@import 'tokens/colors.css' layer(base);
 @import 'tailwindcss';
 
+@layer base {
+  :root,
+  [data-theme='light'] {
+    --application-background: white;
+  }
+  [data-theme='dark'] {
+    --application-background: #0d0e11;
+  }
+}
+
+@theme {
+  --color-site: var(--application-background);
+  --color-lime-1: var(--bit-lime-1);
+  --color-lime-2: var(--bit-lime-2);
+  --color-lime-3: var(--bit-lime-3);
+  --color-lime-4: var(--bit-lime-4);
+  --color-lime-5: var(--bit-lime-5);
+  --color-lime-6: var(--bit-lime-6);
+  --color-lime-7: var(--bit-lime-7);
+  --color-lime-8: var(--bit-lime-8);
+  --color-lime-9: var(--bit-lime-9);
+  --color-lime-10: var(--bit-lime-10);
+  --color-lime-11: var(--bit-lime-11);
+  --color-lime-12: var(--bit-lime-12);
+
+  --color-lime-a1: var(--bit-lime-a1);
+  --color-lime-a2: var(--bit-lime-a2);
+  --color-lime-a3: var(--bit-lime-a3);
+  --color-lime-a4: var(--bit-lime-a4);
+  --color-lime-a5: var(--bit-lime-a5);
+  --color-lime-a6: var(--bit-lime-a6);
+  --color-lime-a7: var(--bit-lime-a7);
+  --color-lime-a8: var(--bit-lime-a8);
+  --color-lime-a9: var(--bit-lime-a9);
+  --color-lime-a10: var(--bit-lime-a10);
+  --color-lime-a11: var(--bit-lime-a11);
+  --color-lime-a12: var(--bit-lime-a12);
+
+  --color-lime-contrast: var(--bit-lime-contrast);
+  --color-lime-surface: var(--bit-lime-surface);
+  --color-lime-indicator: var(--bit-lime-indicator);
+  --color-lime-track: var(--bit-lime-track);
+
+  --color-gray-1: var(--bit-gray-1);
+  --color-gray-2: var(--bit-gray-2);
+  --color-gray-3: var(--bit-gray-3);
+  --color-gray-4: var(--bit-gray-4);
+  --color-gray-5: var(--bit-gray-5);
+  --color-gray-6: var(--bit-gray-6);
+  --color-gray-7: var(--bit-gray-7);
+  --color-gray-8: var(--bit-gray-8);
+  --color-gray-9: var(--bit-gray-9);
+  --color-gray-10: var(--bit-gray-10);
+  --color-gray-11: var(--bit-gray-11);
+  --color-gray-12: var(--bit-gray-12);
+
+  --color-gray-a1: var(--bit-gray-a1);
+  --color-gray-a2: var(--bit-gray-a2);
+  --color-gray-a3: var(--bit-gray-a3);
+  --color-gray-a4: var(--bit-gray-a4);
+  --color-gray-a5: var(--bit-gray-a5);
+  --color-gray-a6: var(--bit-gray-a6);
+  --color-gray-a7: var(--bit-gray-a7);
+  --color-gray-a8: var(--bit-gray-a8);
+  --color-gray-a9: var(--bit-gray-a9);
+  --color-gray-a10: var(--bit-gray-a10);
+  --color-gray-a11: var(--bit-gray-a11);
+  --color-gray-a12: var(--bit-gray-a12);
+
+  --color-gray-contrast: var(--bit-gray-contrast);
+  --color-gray-surface: var(--bit-gray-surface);
+  --color-gray-indicator: var(--bit-gray-indicator);
+  --color-gray-track: var(--bit-gray-track);
+}
 ::selection {
-  background-color: #47a3f3;
-  color: #fefefe;
+  background-color: var(--color-lime-9);
+  color: var(--color-lime-contrast);
 }
 
 :root {

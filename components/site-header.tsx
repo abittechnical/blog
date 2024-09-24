@@ -1,10 +1,9 @@
 import Link from 'next/link'
-import { Icons } from '@/components/icons'
-import { MainNav } from '@/components/main-nav'
 import ThemeSwitcher from '@/components/theme-switcher'
 import BitLogo from '@/components/bit-logo'
-// import { ThemeToggle } from "@/components/theme-toggle"
+import { siteConfig } from '@/config/site-config'
 
+const { navigation } = siteConfig
 const navItems = {
   '/blog': {
     name: 'articles',
@@ -17,112 +16,48 @@ const navItems = {
   },
 }
 
-const MobileMenu = () => {
+const MobileMenuTrigger = () => {
+  // TODO: Mobile Menu Trigger
   return (
-    <div className="lg:hidden" role="dialog" aria-modal="true">
-      {/*// <!-- Background backdrop, show/hide based on slide-over state. -->*/}
-      <div className="fixed inset-0 z-10"></div>
-      <div className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white py-6 px-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-        <div className="flex items-center justify-between">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
-          </a>
-          <button type="button" className="-m-2.5 rounded-md p-2.5 text-gray-700">
-            <span className="sr-only">Close menu</span>
-            <svg
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-        <div className="mt-6 flow-root">
-          <div className="-my-6 divide-y divide-gray-500/10">
-            <div className="space-y-2 py-6">
-              <a
-                href="#"
-                className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-              >
-                Product
-              </a>
-              <a
-                href="#"
-                className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-              >
-                Features
-              </a>
-              <a
-                href="#"
-                className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-              >
-                Marketplace
-              </a>
-              <a
-                href="#"
-                className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-              >
-                Company
-              </a>
-            </div>
-            <div className="py-6">
-              <a
-                href="#"
-                className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-              >
-                Log in
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div className="flex lg:hidden">
+      <button type="button" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+        <span className="sr-only">Open main menu</span>
+        <svg
+          className="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
     </div>
   )
 }
 
 export function SiteHeader() {
   return (
-    <header className="bg-white">
+    <header className="bg-site">
       <nav className="mx-auto flex max-w-5xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <a href="#" className="-m-1.5 p-1.5">
-          <span className="sr-only">Your Company</span>
+        {/* FIXME: there is no index route so href is just a hash */}
+        <Link href="#" className="-m-1.5 p-1.5">
+          <span className="sr-only">A Bit Technical</span>
           <BitLogo className="size-10" />
-        </a>
-        {/* TODO: Mobile Menu Trigger */}
-        <div className="flex lg:hidden">
-          <button
-            type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-          >
-            <span className="sr-only">Open main menu</span>
-            <svg
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </button>
-        </div>
+        </Link>
+        <MobileMenuTrigger />
         {/* TODO: Site Navigation */}
         <div className="hidden lg:flex lg:items-center lg:gap-x-6">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Writing
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            UI Snippets
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            About
-          </a>
+          {navigation.map(navItem => (
+            <Link
+              href={!navItem.disabled ? navItem.href : '#'}
+              className="text-gray-12 text-base font-semibold leading-6"
+            >
+              {navItem.name}
+            </Link>
+          ))}
+
           {/* TODO: add theme switcher */}
           <ThemeSwitcher />
         </div>
