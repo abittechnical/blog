@@ -9,6 +9,7 @@ import Footer from '@/components/footer'
 import { baseUrl } from './sitemap'
 import { cx } from '@/lib/cva'
 import { SiteHeader } from '@/components/site-header'
+import { ThemeProvider } from '@/components/theme-provider'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -41,8 +42,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={cx(GeistSans.variable, GeistMono.variable)} suppressHydrationWarning>
-      <body className="min-h-screen bg-white antialiased">
-        {children}
+      <body className="bg-site min-h-screen antialiased">
+        <ThemeProvider enableSystem defaultTheme="system">
+          {children}
+        </ThemeProvider>
         <Analytics />
         <SpeedInsights />
       </body>

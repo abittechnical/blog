@@ -47,25 +47,25 @@ const socials = [
 const Divider = () => (
   <div className="relative mb-4">
     <div aria-hidden="true" className="absolute inset-0 flex items-center">
-      <div className="w-full border-t border-gray-300" />
+      <div className="border-gray-6 w-full border-t" />
     </div>
     <div className="relative flex justify-center">
-      <span className="bg-white px-2 text-gray-500">
-        <BitLogo className="size-6 text-gray-500" />
+      <span className="bg-site px-2">
+        <BitLogo className="size-6" />
       </span>
     </div>
   </div>
 )
 
 const SiteFooter = () => (
-  <footer className="bg-white">
+  <footer className="">
     <div className="mx-auto max-w-5xl py-12 px-6 lg:px-8">
       <Divider />
       <div className="md:flex md:items-center md:justify-between">
         <nav aria-label="Footer" className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-8">
           {nav.map(item => (
             <div key={item.name} className="pb-6">
-              <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+              <a href={item.href} className="text-gray-10 hover:text-gray-11 text-sm leading-6">
                 {item.name}
               </a>
             </div>
@@ -73,15 +73,15 @@ const SiteFooter = () => (
         </nav>
         <div className="flex justify-center space-x-6 md:order-2">
           {socials.map(item => (
-            <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+            <a key={item.name} href={item.href} className="text-gray-10 hover:text-gray-11">
               <span className="sr-only">{item.name}</span>
-              <item.icon aria-hidden="true" className="h-6 w-6" />
+              <item.icon aria-hidden="true" className="size-6" />
             </a>
           ))}
         </div>
       </div>
       <div className="mt-6 flex justify-end">
-        <p className="text-xs leading-5 text-gray-500">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+        <p className="text-gray-9 text-xs leading-5">&copy; 2020 Your Company, Inc. All rights reserved.</p>
       </div>
     </div>
   </footer>

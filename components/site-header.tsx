@@ -52,7 +52,7 @@ export function SiteHeader() {
           {navigation.map(navItem => (
             <Link
               href={!navItem.disabled ? navItem.href : '#'}
-              className="text-sm font-semibold leading-6 text-gray-900"
+              className="text-gray-12 text-base font-semibold leading-6"
             >
               {navItem.name}
             </Link>
