@@ -1,13 +1,13 @@
-import '@/theme/styles.css';
-import type { Metadata } from 'next';
-import { GeistSans } from 'geist/font/sans';
-import { GeistMono } from 'geist/font/mono';
-import { Navbar } from '@/components/nav';
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
-import Footer from '@/components/footer';
-import { baseUrl } from './sitemap';
-import { cx } from '@/lib/cva';
+import '@/theme/styles.css'
+import type { Metadata } from 'next'
+import { GeistSans } from 'geist/font/sans'
+import { GeistMono } from 'geist/font/mono'
+import { Navbar } from '@/components/nav'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
+import Footer from '@/components/footer'
+import { baseUrl } from './sitemap'
+import { cx } from '@/lib/cva'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -35,23 +35,16 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-};
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={cx('bg-white text-black dark:bg-black dark:text-white', GeistSans.variable, GeistMono.variable)}
-    >
-      <body className="mx-4 mt-8 max-w-xl antialiased lg:mx-auto">
-        <main className="mt-6 flex min-w-0 flex-auto flex-col px-2 md:px-0">
-          <Navbar />
-          {children}
-          <Footer />
-          <Analytics />
-          <SpeedInsights />
-        </main>
+    <html lang="en" className={cx(GeistSans.variable, GeistMono.variable)}>
+      <body className="min-h-screen bg-white font-sans antialiased">
+        {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
-  );
+  )
 }
