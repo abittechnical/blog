@@ -1,5 +1,19 @@
 @import 'tailwindcss';
 
+@layer base {
+  :root {
+    --application-background: white;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --application-background: black;
+    }
+  }
+}
+
+@theme {
+  --color-site: var(--application-background);
+}
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
